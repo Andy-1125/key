@@ -3,7 +3,7 @@ name: Sync To Gitee
 on: [ push, delete, create ]
 
 jobs:
-  build:
+  gitee:
     runs-on: ubuntu-latest
     steps:
       - name: Sync to Gitee
@@ -18,7 +18,7 @@ jobs:
           destination-repo: git@gitee.com:Andy-1125/key.git
 
 
-  resources:
+  gitcode:
     runs-on: ubuntu-latest
     steps:
       - name: Sync to Gitcode
